@@ -1,0 +1,15 @@
+{
+  "id": "HlIggRDjYfaKrqH2f",
+  "name": "xrechnung-invoice-generator",
+  "title": "XRechnung Invoice Generator",
+  "description": "Generate XRechnung 3.0.2 UBL or CII from strict JSON and validate it with the pinned KoSIT rules before delivery.",
+  "seoTitle": "XRechnung Invoice Generator - JSON to UBL & CII",
+  "seoDescription": "Generate XRechnung 3.0.2 UBL or CII invoice XML from JSON. Check output against pinned KoSIT rules and receive validated files with technical evidence.",
+  "isPublic": true,
+  "url": "https://apify.com/kamerozkan/xrechnung-invoice-generator",
+  "checkedAt": "2026-09-30",
+  "changeScope": "listing metadata and sample documentation only",
+  "runtimeChanged": false,
+  "schemasChanged": false,
+  "examplesRegenerated": false
+}
