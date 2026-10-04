@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-04",
+  "actor": "kamerozkan/xrechnung-invoice-generator",
+  "status": "RELEASE_PUBLISHED_SOURCE_VERIFIED",
+  "changeScope": "Current-source input schema snapshot plus two secret input flags; sample documentation only",
+  "inputSchema": {
+    "file": "actor_input_schema.json",
+    "sha256": "8e19179eeee2c2d90552452bc09fad63d2be6d76267bb22226804d4fc0a5a8be",
+    "previousRepositorySha256": "4fae7846527e60ec55d3d00e544b74d0bdd9ad083c07aada2f646cc8df08f216",
+    "currentSourceBeforeFlagsSha256": "44ce40feaa2547a593c7ab2ec840f3926ce182a3c828244eb72716a52ef382ef",
+    "repositoryHadPreExistingSchemaDrift": true,
+    "candidateSourceChangedOnlyTwoFlags": true,
+    "changedFlags": [
+      {
+        "path": "properties.invoice.isSecret",
+        "before": "absent",
+        "after": true,
+        "type": "object",
+        "editor": "json"
+      },
+      {
+        "path": "properties.invoices.isSecret",
+        "before": "absent",
+        "after": true,
+        "type": "array",
+        "editor": "json"
+      }
+    ],
+    "semanticsAfterRemovingTwoFlagsEqualCurrentSource": true
+  },
+  "sdk": {
+    "requirement": "apify==4.0.0",
+    "documentedPythonObjectArrayMinimum": "2.7.0",
+    "inputMethod": "Actor.get_input",
+    "supportedObjectArrayJsonEditors": true,
+    "officialDocs": "https://docs.apify.com/actors/development/actor-definition/input-schema/secret-input",
+    "sourceCheck": "Static source inspection; no literal direct INPUT KVS bypass or raw input Actor logging found"
+  },
+  "checks": {
+    "knownSchemaPrefillCases": [
+      {
+        "kind": "single",
+        "source": "Already-public deployed schema invoice.prefill",
+        "beforeErrors": 0,
+        "afterErrors": 0
+      },
+      {
+        "kind": "batch",
+        "source": "Already-public deployed schema invoice.prefill",
+        "beforeErrors": 0,
+        "afterErrors": 0
+      }
+    ],
+    "historicalPairedInputSchemaChecks": [
+      {
+        "file": "01_standard_service_input.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "file": "02_multi_line_input.json",
+        "status": "PASS",
+        "errors": []
+      },
+      {
+        "file": "03_recurring_service_input.json",
+        "status": "PASS",
+        "errors": []
+      }
+    ],
+    "validator": "jsonschema 4.26.0 Draft202012Validator plus FormatChecker",
+    "apifyNullableAdaptedInValidationCopyOnly": true,
+    "newEncryptedEndToEndRunPerformed": false,
+    "generatedOutputRegenerated": false
+  },
+  "unchanged": {
+    "runtime": true,
+    "dependencies": true,
+    "pricing": true,
+    "inputTypesDefaultsPrefillDescriptions": true,
+    "datasetSchema": true,
+    "historicalInputOutputFixtures": true,
+    "historicalValidationReport": true
+  },
+  "limits": [
+    "Public latest build and deployed source hashes verified; no new encrypted end-to-end run or fresh output was verified",
+    "Existing stored inputs were not audited or migrated",
+    "Secret fields concern supported Actor INPUT storage and SDK decoding; delivered output is not encrypted by these flags",
+    "No private customer inputs or ciphertext copied",
+    "Historical local outputs are not new-release output evidence",
+    "No new legal/conformance/network acceptance or universal privacy guarantee"
+  ],
+  "release": {
+    "buildId": "Up0yYxmxMqEHTr2Tf",
+    "buildNumber": "1.0.3",
+    "buildStatus": "SUCCEEDED",
+    "publicLatestVerified": true,
+    "allSourceHashesVerified": true,
+    "verifiedAtUtc": "2026-10-04T00:12:09.683478+00:00",
+    "inputSchemaSha256": "8e19179eeee2c2d90552452bc09fad63d2be6d76267bb22226804d4fc0a5a8be",
+    "secretInputFields": [
+      "invoice",
+      "invoices"
+    ],
+    "newActorRuns": 0,
+    "freshSourceOutputVerified": false
+  }
+}

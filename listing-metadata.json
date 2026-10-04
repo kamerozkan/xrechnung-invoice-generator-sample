@@ -7,9 +7,49 @@
   "seoDescription": "Generate XRechnung 3.0.2 UBL or CII invoice XML from JSON. Check output against pinned KoSIT rules and receive validated files with technical evidence.",
   "isPublic": true,
   "url": "https://apify.com/kamerozkan/xrechnung-invoice-generator",
-  "checkedAt": "2026-09-30",
-  "changeScope": "listing metadata and sample documentation only",
+  "checkedAt": "2026-10-04",
+  "changeScope": "sample input schema synchronized to published privacy release 1.0.3; documentation and maintenance evidence",
   "runtimeChanged": false,
-  "schemasChanged": false,
-  "examplesRegenerated": false
+  "schemasChanged": true,
+  "examplesRegenerated": false,
+  "previousListingAudit": {
+    "checkedAt": "2026-09-30",
+    "changeScope": "listing metadata and sample documentation only",
+    "runtimeChanged": false,
+    "schemasChanged": false,
+    "examplesRegenerated": false
+  },
+  "listingFieldsCheckedAt": "2026-09-30",
+  "inputSchemaChanged": true,
+  "datasetSchemaChanged": false,
+  "privacyMaintenance": {
+    "status": "RELEASE_PUBLISHED_SOURCE_VERIFIED",
+    "date": "2026-10-04",
+    "fields": [
+      "invoice",
+      "invoices"
+    ],
+    "inputStorageSecret": true,
+    "existingStoredInputsAuditedOrMigrated": false,
+    "deliveredOutputEncryptedByThisChange": false,
+    "sdkRequirement": "apify==4.0.0",
+    "schemaSha256": "8e19179eeee2c2d90552452bc09fad63d2be6d76267bb22226804d4fc0a5a8be",
+    "evidenceFile": "INPUT_PRIVACY_MAINTENANCE_2026-10-04.json",
+    "newEncryptedEndToEndRunPerformed": false,
+    "release": {
+      "buildId": "Up0yYxmxMqEHTr2Tf",
+      "buildNumber": "1.0.3",
+      "buildStatus": "SUCCEEDED",
+      "publicLatestVerified": true,
+      "allSourceHashesVerified": true,
+      "verifiedAtUtc": "2026-10-04T00:12:09.683478+00:00",
+      "inputSchemaSha256": "8e19179eeee2c2d90552452bc09fad63d2be6d76267bb22226804d4fc0a5a8be",
+      "secretInputFields": [
+        "invoice",
+        "invoices"
+      ],
+      "newActorRuns": 0,
+      "freshSourceOutputVerified": false
+    }
+  }
 }
